@@ -6,9 +6,10 @@ document.querySelector("nav ul li a").setAttribute("href", "https://www.google.c
 
 let colourButtons = document.querySelectorAll(".colPicker");
 console.dir(colourButtons);
-//for (let i = 0; i < colourButtons.length; i++) {
-//    colourButtons[i].style.backgroundColor = "green";
-//}
+for (let i = 0; i < colourButtons.length; i++) {
+    colourButtons[i+0].style.backgroundColor = "green";
+}
+
 let myButton = document.getElementById("myTestBtn");
 myButton.addEventListener("click", function()
 {
