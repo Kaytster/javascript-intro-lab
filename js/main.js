@@ -5,12 +5,11 @@ document.querySelector("nav ul li").setAttribute("class", "currentPage");
 document.querySelector("nav ul li a").setAttribute("href", "https://www.google.co.uk");
 
 //Colour Buttons
- let colourButtons = document.querySelectorAll(".colPicker");
+/*  let colourButtons = document.querySelectorAll(".colPicker");
 console.dir(colourButtons);
 for (let i = 0; i < colourButtons.length; i++) {
     colourButtons[i].addEventListener("click", chgColour)
 }
-
 let myButton = document.getElementById("myTestBtn");
 myButton.addEventListener("click", function()
 {
@@ -20,7 +19,7 @@ myButton.addEventListener("click", function()
  let redButton = document.querySelector(".red");
 let greenButton = document.querySelector(".green");
 let blueButton = document.querySelector(".blue");
-let defaultButton = document.querySelector(".reset"); 
+let defaultButton = document.querySelector(".reset");  */
 
 //Image Rotator
 let imageAr = [
@@ -34,17 +33,30 @@ let imageAr = [
 
 let imageCounter = 0;
 let imageRotator = document.getElementById("myImages");
-setInterval(changeImage, );
+setInterval(changeImage, 4000);
 
 function changeImage() 
 {
 imageRotator.setAttribute("src", imageAr[imageCounter]);
 imageCounter++; 
-if (imageCounter > imageAr.length)
+if (imageCounter >= imageAr.length)
     {
     imageCounter = 0;
     }
 }
+changeImage();
+
+document.getElementById("myImages").addEventListener("click", nextImage)
+function nextImage()
+{
+    imageRotator.setAttribute("src", imageAr[imageCounter]);
+    imageCounter++;
+    if (imageCounter >= imageAr.length)
+    {
+    imageCounter = 0;
+    }
+}
+
 
 /* let documentBody = document.querySelector("body");
 redButton.addEventListener("click", function() {
