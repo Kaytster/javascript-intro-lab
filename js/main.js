@@ -4,8 +4,6 @@ document.getElementById("myHeading").innerHTML = "Katy";
 document.querySelector("nav ul li").setAttribute("class", "currentPage");
 document.querySelector("nav ul li a").setAttribute("href", "https://www.google.co.uk");
 
-//Colour Buttons
-
 
 //Image Rotator
 let imageAr = [
@@ -43,7 +41,27 @@ function nextImage()
     }
 }
 
-  let colourButtons = document.querySelectorAll(".colPicker");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* let colourButtons = document.querySelectorAll(".colPicker");
 console.dir(colourButtons);
 for (let i = 0; i < colourButtons.length; i++) {
     colourButtons[i].addEventListener("click", colourButtons)
@@ -74,7 +92,7 @@ blueButton.addEventListener("click", function() {
 defaultButton.addEventListener("click", function() {
     console.info("default clicked");
     documentBody.setAttribute("class", "defaultBack");
-}); 
+});  */
  
 
 
